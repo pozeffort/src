@@ -1,0 +1,16 @@
+h4{
+	color: tomato;
+	font-family: 'Kavivanar', cursive;
+}
+.form-group,h4{
+	margin-left: 300px; 
+}
+label{
+	color: pink;
+}
+.btn-link{
+	color: red;
+}
+input.alert{
+	border: 5px solid red;
+}
