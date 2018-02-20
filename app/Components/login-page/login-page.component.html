@@ -1,0 +1,29 @@
+<div class="container jumbotron ">
+<form #loginform="ngForm">
+<div class="form-group">
+<label>Mobile No</label>	
+<input type="text" name="username" #field1="ngModel" class="form-control" pattern="[0-9]*" maxlength="10" min="10"  ngModel required>
+<div class="alert alert-danger" [hidden]="field1.valid||field1.untouched">
+	please enter valid mobile no
+</div>	
+</div>
+
+
+<div class="form-group">
+<label>Password</label>	
+<input type="password" name="password" class="form-control"  ngModel required>
+</div>
+
+<div class="form-group">
+	
+<input type="button" [disabled]="!loginform.valid" name="login" class="btn btn-primary" value="login">
+<input type="button"  name="signup" class="btn btn-primary" value="signup" (click)="onsignup()" >
+
+</div>
+<div>
+	<a routerLink="/ForgetPassword">Forgot Password</a>
+
+</div>
+
+</form>
+</div>
